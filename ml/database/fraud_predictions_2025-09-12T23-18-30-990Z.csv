@@ -1,0 +1,11 @@
+Transaction_ID,ml_pred_prob,fraud_flag,risk_level,reason
+TXN001,0.0142,0,LOW,Low risk transaction
+TXN002,1,1,HIGH,"Very high transaction amount, ATM transaction (high risk), Foreign transaction"
+TXN003,0.199,0,LOW,Digital wallet payment
+TXN004,0.9724,1,HIGH,"Very high transaction amount, Night time transaction, Online transaction, Unusual transaction time"
+TXN005,0.0633,0,LOW,Low risk transaction
+TXN006,0.0692,0,LOW,Low risk transaction
+TXN007,0.5779,1,MEDIUM,"High transaction amount, Foreign transaction"
+TXN008,0.8832,1,HIGH,"Night time transaction, Online transaction, Foreign transaction, Digital wallet payment"
+TXN009,0.0606,0,LOW,Low risk transaction
+TXN010,1,1,HIGH,"Very high transaction amount, Night time transaction, ATM transaction (high risk), Foreign transaction"

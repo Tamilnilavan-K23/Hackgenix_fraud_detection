@@ -1,0 +1,11 @@
+Transaction_ID,Amount,Merchant,Category,User_ID,Timestamp,Location,Payment_Method
+TXN001,1250.50,Amazon,E-commerce,USER001,2024-01-15T14:30:00Z,New York US,credit_card
+TXN002,25000.00,ATM Withdrawal,ATM,USER002,2024-01-15T02:15:00Z,Lagos Nigeria,debit_card
+TXN003,89.99,Starbucks,Food,USER003,2024-01-15T08:45:00Z,Seattle US,digital_wallet
+TXN004,15000.75,Online Casino,Online,USER004,2024-01-15T23:30:00Z,Moscow Russia,credit_card
+TXN005,45.20,Shell Gas Station,Gas,USER005,2024-01-15T16:20:00Z,Dallas US,debit_card
+TXN006,500.00,Walmart,Retail,USER006,2024-01-15T12:00:00Z,Chicago US,credit_card
+TXN007,8500.00,Luxury Store,Retail,USER007,2024-01-15T03:45:00Z,Dubai UAE,credit_card
+TXN008,12.99,Netflix,Online,USER008,2024-01-15T19:30:00Z,London UK,digital_wallet
+TXN009,750.25,Best Buy,Retail,USER009,2024-01-15T11:15:00Z,Los Angeles US,credit_card
+TXN010,35000.00,Wire Transfer,ATM,USER010,2024-01-15T01:00:00Z,Beijing China,bank_transfer

@@ -1,0 +1,42 @@
+{"level":"info","message":"🚀 FraudShield Backend Server running on port 5000","service":"fraudshield-backend","timestamp":"2025-09-13 03:18:24"}
+{"level":"info","message":"📊 Environment: development","service":"fraudshield-backend","timestamp":"2025-09-13 03:18:24"}
+{"level":"info","message":"🌐 CORS enabled for: http://localhost:5173","service":"fraudshield-backend","timestamp":"2025-09-13 03:18:24"}
+{"level":"info","message":"📦 MongoDB Connected: localhost","service":"fraudshield-backend","timestamp":"2025-09-13 03:18:24"}
+{"level":"info","message":"🚀 FraudShield Backend Server running on port 5000","service":"fraudshield-backend","timestamp":"2025-09-13 04:16:30"}
+{"level":"info","message":"📊 Environment: development","service":"fraudshield-backend","timestamp":"2025-09-13 04:16:30"}
+{"level":"info","message":"🌐 CORS enabled for: http://localhost:5173","service":"fraudshield-backend","timestamp":"2025-09-13 04:16:30"}
+{"level":"info","message":"📦 MongoDB Connected: localhost","service":"fraudshield-backend","timestamp":"2025-09-13 04:16:30"}
+{"level":"info","message":"🚀 FraudShield Backend Server running on port 5000","service":"fraudshield-backend","timestamp":"2025-09-13 04:19:18"}
+{"level":"info","message":"📊 Environment: development","service":"fraudshield-backend","timestamp":"2025-09-13 04:19:18"}
+{"level":"info","message":"🌐 CORS enabled for: http://localhost:5173","service":"fraudshield-backend","timestamp":"2025-09-13 04:19:18"}
+{"level":"info","message":"📦 MongoDB Connected: localhost","service":"fraudshield-backend","timestamp":"2025-09-13 04:19:18"}
+{"level":"info","message":"🚀 FraudShield Backend Server running on port 5000","service":"fraudshield-backend","timestamp":"2025-09-13 05:05:50"}
+{"level":"info","message":"📊 Environment: development","service":"fraudshield-backend","timestamp":"2025-09-13 05:05:50"}
+{"level":"info","message":"🌐 CORS enabled for: http://localhost:5173","service":"fraudshield-backend","timestamp":"2025-09-13 05:05:50"}
+{"level":"info","message":"📦 MongoDB Connected: localhost","service":"fraudshield-backend","timestamp":"2025-09-13 05:05:50"}
+{"level":"info","message":"🚀 FraudShield Backend Server running on port 5000","service":"fraudshield-backend","timestamp":"2025-09-13 05:12:23"}
+{"level":"info","message":"📊 Environment: development","service":"fraudshield-backend","timestamp":"2025-09-13 05:12:23"}
+{"level":"info","message":"🌐 CORS enabled for: http://localhost:5173","service":"fraudshield-backend","timestamp":"2025-09-13 05:12:23"}
+{"level":"info","message":"📦 MongoDB Connected: localhost","service":"fraudshield-backend","timestamp":"2025-09-13 05:12:23"}
+{"level":"info","message":"🚀 FraudShield Backend Server running on port 5000","service":"fraudshield-backend","timestamp":"2025-09-13 05:25:16"}
+{"level":"info","message":"📊 Environment: development","service":"fraudshield-backend","timestamp":"2025-09-13 05:25:16"}
+{"level":"info","message":"🌐 CORS enabled for: http://localhost:8080","service":"fraudshield-backend","timestamp":"2025-09-13 05:25:16"}
+{"level":"info","message":"📦 MongoDB Connected: localhost","service":"fraudshield-backend","timestamp":"2025-09-13 05:25:16"}
+{"level":"info","message":"🚀 FraudShield Backend Server running on port 5000","service":"fraudshield-backend","timestamp":"2025-09-13 05:28:40"}
+{"level":"info","message":"📊 Environment: development","service":"fraudshield-backend","timestamp":"2025-09-13 05:28:40"}
+{"level":"info","message":"🌐 CORS enabled for: http://localhost:8080","service":"fraudshield-backend","timestamp":"2025-09-13 05:28:40"}
+{"level":"info","message":"📦 MongoDB Connected: localhost","service":"fraudshield-backend","timestamp":"2025-09-13 05:28:40"}
+{"level":"info","message":"::1 - - [12/Sep/2025:23:59:07 +0000] \"OPTIONS /api/upload HTTP/1.1\" 204 0 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:29:07"}
+{"level":"info","message":"::1 - - [12/Sep/2025:23:59:07 +0000] \"POST /api/upload HTTP/1.1\" 401 65 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:29:07"}
+{"level":"info","message":"::1 - - [12/Sep/2025:23:59:21 +0000] \"OPTIONS /api/upload HTTP/1.1\" 204 0 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:29:21"}
+{"level":"info","message":"::1 - - [12/Sep/2025:23:59:21 +0000] \"POST /api/upload HTTP/1.1\" 401 65 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:29:21"}
+{"level":"info","message":"::1 - - [12/Sep/2025:23:59:44 +0000] \"OPTIONS /api/upload HTTP/1.1\" 204 0 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:29:44"}
+{"level":"info","message":"::1 - - [12/Sep/2025:23:59:44 +0000] \"POST /api/upload HTTP/1.1\" 401 65 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:29:44"}
+{"level":"info","message":"🚀 FraudShield Backend Server running on port 5000","service":"fraudshield-backend","timestamp":"2025-09-13 05:31:47"}
+{"level":"info","message":"📊 Environment: development","service":"fraudshield-backend","timestamp":"2025-09-13 05:31:47"}
+{"level":"info","message":"🌐 CORS enabled for: http://localhost:8080","service":"fraudshield-backend","timestamp":"2025-09-13 05:31:47"}
+{"level":"info","message":"📦 MongoDB Connected: localhost","service":"fraudshield-backend","timestamp":"2025-09-13 05:31:47"}
+{"level":"info","message":"::1 - - [13/Sep/2025:00:03:57 +0000] \"OPTIONS /api/upload HTTP/1.1\" 204 0 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:33:57"}
+{"level":"info","message":"::1 - - [13/Sep/2025:00:03:57 +0000] \"POST /api/upload HTTP/1.1\" 401 65 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:33:57"}
+{"level":"info","message":"::1 - - [13/Sep/2025:00:04:05 +0000] \"OPTIONS /api/upload HTTP/1.1\" 204 0 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:34:05"}
+{"level":"info","message":"::1 - - [13/Sep/2025:00:04:05 +0000] \"POST /api/upload HTTP/1.1\" 401 65 \"http://localhost:8080/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0\"","service":"fraudshield-backend","timestamp":"2025-09-13 05:34:05"}
