@@ -44,8 +44,8 @@ const upload = multer({
 
 // @desc    Upload and process CSV file with ML fraud detection
 // @route   POST /api/upload
-// @access  Private
-router.post('/', protect, upload.single('file'), async (req, res, next) => {
+// @access  Public
+router.post('/', upload.single('file'), async (req, res, next) => {
   try {
     if (!req.file) {
       return res.status(400).json({
@@ -97,7 +97,8 @@ router.post('/', protect, upload.single('file'), async (req, res, next) => {
           preprocessing: mlResult.preprocessing,
           predictions: mlResult.predictions,
           database: mlResult.database
-        }
+        },
+        results: mlResult.results || [] // Pass fraud results to frontend
       });
 
     } catch (mlError) {

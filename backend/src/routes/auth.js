@@ -74,6 +74,26 @@ router.post('/login', async (req, res, next) => {
       });
     }
 
+    // Demo login bypass for Detectra
+    if (email === 'admin@detectra.com' && password === 'password') {
+      const token = generateToken('demo-admin-id');
+      
+      logger.info(`Demo user logged in: ${email}`);
+      
+      return res.status(200).json({
+        success: true,
+        token,
+        user: {
+          id: 'demo-admin-id',
+          email: 'admin@detectra.com',
+          firstName: 'Admin',
+          lastName: 'User',
+          role: 'admin',
+          lastLogin: new Date()
+        }
+      });
+    }
+
     // Check for user (include password for comparison)
     const user = await User.findOne({ email }).select('+password');
 

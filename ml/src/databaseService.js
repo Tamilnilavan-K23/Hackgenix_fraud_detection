@@ -316,8 +316,12 @@ export class DatabaseService {
       const transactionsCollection = this.db.collection('transactions');
       const alertsCollection = this.db.collection('alerts');
 
-      // Create indexes for better query performance
-      await transactionsCollection.createIndex({ Transaction_ID: 1 }, { unique: true });
+      // Create indexes for better query performance (skip unique constraint if collection already exists)
+      try {
+        await transactionsCollection.createIndex({ Transaction_ID: 1 }, { unique: true });
+      } catch (error) {
+        if (error.code !== 11000) throw error; // Ignore duplicate key errors
+      }
       await transactionsCollection.createIndex({ fraud_flag: 1 });
       await transactionsCollection.createIndex({ risk_level: 1 });
       await transactionsCollection.createIndex({ created_at: -1 });

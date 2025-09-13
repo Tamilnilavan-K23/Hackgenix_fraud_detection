@@ -36,6 +36,9 @@ const storage = multer.diskStorage({
 
 const upload = multer({ 
   storage,
+  limits: {
+    fileSize: 10 * 1024 * 1024 // 10MB limit
+  },
   fileFilter: (req, file, cb) => {
     if (file.mimetype === 'text/csv' || file.originalname.endsWith('.csv')) {
       cb(null, true);
@@ -52,9 +55,34 @@ const dbService = new DatabaseService();
 
 // Routes
 
-// Health check
+// Root route
+app.get('/', (req, res) => {
+  res.status(200).json({
+    message: 'Welcome to Detectra ML Service',
+    tagline: 'No Panic, Just Magic',
+    version: '1.0.0',
+    endpoints: {
+      health: '/health',
+      processCSV: '/process-csv',
+      stats: '/stats',
+      transactions: '/transactions',
+      alerts: '/alerts',
+      search: '/search'
+    },
+    model: fraudModel.getModelInfo()
+  });
+});
+
+// Health check endpoint
 app.get('/health', (req, res) => {
-  res.json({ status: 'OK', service: 'Detectra ML Service', tagline: 'No Panic, Just Magic', timestamp: new Date().toISOString() });
+  res.status(200).json({
+    status: 'OK',
+    service: 'Detectra ML Service',
+    tagline: 'No Panic, Just Magic',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    model: fraudModel.getModelInfo()
+  });
 });
 
 // Process uploaded CSV file
@@ -108,7 +136,8 @@ app.post('/process-csv', upload.single('file'), async (req, res) => {
         highRiskTransactions: predictions.filter(p => p.risk_level === 'HIGH').length
       },
       database: dbResult,
-      csvPath: csvPath
+      csvPath: csvPath,
+      results: predictions // Add fraud results for frontend display
     });
     
   } catch (error) {

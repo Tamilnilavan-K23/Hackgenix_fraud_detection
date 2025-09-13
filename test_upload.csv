@@ -1,0 +1,6 @@
+Transaction_ID,Amount,Merchant,Category,User_ID,Timestamp,Location,Payment_Method
+TXN001,1250.50,Amazon,E-commerce,USER001,2024-01-15T14:30:00Z,New York US,credit_card
+TXN002,25000.00,ATM Withdrawal,ATM,USER002,2024-01-15T02:15:00Z,Lagos Nigeria,debit_card
+TXN003,89.99,Starbucks,Food,USER003,2024-01-15T08:45:00Z,Seattle US,digital_wallet
+TXN004,15000.75,Online Casino,Online,USER004,2024-01-15T23:30:00Z,Moscow Russia,credit_card
+TXN005,45.20,Shell Gas Station,Gas,USER005,2024-01-15T16:20:00Z,Dallas US,debit_card

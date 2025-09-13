@@ -26,7 +26,7 @@ const seedDatabase = async () => {
 
     // Create admin user
     const adminUser = await User.create({
-      email: 'admin@fraudshield.com',
+      email: 'admin@detectra.com',
       password: 'password',
       firstName: 'Admin',
       lastName: 'User',
@@ -35,7 +35,7 @@ const seedDatabase = async () => {
 
     // Create analyst user
     const analystUser = await User.create({
-      email: 'analyst@fraudshield.com',
+      email: 'analyst@detectra.com',
       password: 'password',
       firstName: 'John',
       lastName: 'Analyst',

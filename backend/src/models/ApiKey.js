@@ -5,7 +5,6 @@ const apiKeySchema = new mongoose.Schema({
   keyId: {
     type: String,
     required: true,
-    unique: true,
     default: () => `fs_${uuidv4().replace(/-/g, '')}`
   },
   name: {
@@ -21,8 +20,7 @@ const apiKeySchema = new mongoose.Schema({
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
-    required: true,
-    index: true
+    required: true
   },
   permissions: [{
     type: String,
@@ -75,7 +73,7 @@ const apiKeySchema = new mongoose.Schema({
 });
 
 // Indexes
-apiKeySchema.index({ keyId: 1 });
+apiKeySchema.index({ keyId: 1 }, { unique: true });
 apiKeySchema.index({ owner: 1 });
 apiKeySchema.index({ isActive: 1 });
 apiKeySchema.index({ expiresAt: 1 });

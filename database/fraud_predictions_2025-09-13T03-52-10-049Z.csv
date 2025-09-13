@@ -1,0 +1,6 @@
+Transaction_ID,ml_pred_prob,fraud_flag,risk_level,reason
+TXN001,1,1,HIGH,"High transaction amount (>$1000), Online/E-commerce transaction (high risk), Credit card transaction"
+TXN002,1,1,HIGH,"High transaction amount (>$1000), ATM transaction (very high risk), Foreign transaction (very high risk), Very early morning transaction, Round number amount (suspicious pattern)"
+TXN003,1,1,HIGH,"Standard transaction amount, Common fraud category, Digital wallet payment (higher risk)"
+TXN004,1,1,HIGH,"High transaction amount (>$1000), Night time transaction (high risk), Online/E-commerce transaction (high risk), Credit card transaction, Very early morning transaction"
+TXN005,0.5779,1,HIGH,"Standard transaction amount, Common fraud category"

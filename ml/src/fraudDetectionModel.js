@@ -35,9 +35,10 @@ export class FraudDetectionModel {
   // Rule-based prediction - AGGRESSIVE FRAUD DETECTION
   ruleBasedPrediction(data) {
     console.log('Using AGGRESSIVE rule-based fraud detection...');
+    console.log('Sample data for debugging:', JSON.stringify(data.slice(0, 2), null, 2));
     
-    return data.map(row => {
-      let fraudScore = 0.2; // Base fraud score - assume some risk
+    return data.map((row, index) => {
+      let fraudScore = 0.3; // Higher base fraud score
       let reasons = [];
       
       // Ensure Transaction_ID is not null
@@ -45,16 +46,21 @@ export class FraudDetectionModel {
         row.Transaction_ID = `TXN-${Date.now()}-${Math.random().toString(36).substr(2, 5)}`;
       }
       
+      console.log(`Processing transaction ${index + 1}: ID=${row.Transaction_ID}, Amount=${row.Amount}`);
+      
       // AGGRESSIVE Amount-based rules
       if (row.Amount > 1000) {
-        fraudScore += 0.6;
+        fraudScore += 0.5;
         reasons.push('High transaction amount (>$1000)');
       } else if (row.Amount > 500) {
-        fraudScore += 0.4;
+        fraudScore += 0.3;
         reasons.push('Medium transaction amount (>$500)');
       } else if (row.Amount > 100) {
         fraudScore += 0.2;
         reasons.push('Above average amount (>$100)');
+      } else {
+        fraudScore += 0.1;
+        reasons.push('Standard transaction amount');
       }
       
       // Time-based rules - MORE AGGRESSIVE
@@ -104,11 +110,13 @@ export class FraudDetectionModel {
       }
       
       // Ensure we detect fraud more frequently
-      fraudScore += Math.random() * 0.3; // Add more randomness weighted toward fraud
+      fraudScore += Math.random() * 0.4; // Add more randomness weighted toward fraud
       
-      const fraudProb = Math.max(0.1, Math.min(1, fraudScore)); // Minimum 10% fraud probability
-      const fraudFlag = fraudProb > 0.3 ? 1 : 0; // Lower threshold for fraud flag
+      const fraudProb = Math.max(0.2, Math.min(1, fraudScore)); // Minimum 20% fraud probability
+      const fraudFlag = fraudProb >= 0.4 ? 1 : 0; // Lower threshold for fraud flag
       const riskLevel = this.getRiskLevel(fraudProb);
+      
+      console.log(`Transaction ${row.Transaction_ID}: Score=${fraudScore.toFixed(3)}, Prob=${fraudProb.toFixed(3)}, Flag=${fraudFlag}, Risk=${riskLevel}`);
       
       return {
         Transaction_ID: row.Transaction_ID,
@@ -142,7 +150,7 @@ export class FraudDetectionModel {
   async savePredictionsToCSV(predictions, filename = null) {
     try {
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-      const outputPath = path.join(process.cwd(), 'database', filename || `fraud_predictions_${timestamp}.csv`);
+      const outputPath = path.join(process.cwd(), '..', 'database', filename || `fraud_predictions_${timestamp}.csv`);
       
       const csvWriter = createCsvWriter.createObjectCsvWriter({
         path: outputPath,

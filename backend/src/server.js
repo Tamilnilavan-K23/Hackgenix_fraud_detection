@@ -70,6 +70,24 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
+// Root route
+app.get('/', (req, res) => {
+  res.status(200).json({
+    message: 'Welcome to Detectra API',
+    tagline: 'No Panic, Just Magic',
+    version: '1.0.0',
+    endpoints: {
+      health: '/health',
+      auth: '/api/auth',
+      upload: '/api/upload',
+      dashboard: '/api/dashboard',
+      transactions: '/api/transactions',
+      alerts: '/api/alerts',
+      reports: '/api/reports'
+    }
+  });
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({
